@@ -86,3 +86,7 @@ You can modify the following values in the code:
 -WIDTH and HEIGHT for window size
 
 -Particle radius and velocity range
+
+
+In addition to circular particles, the project also includes heart shaped particles implemented in a separate source file. These heart shapes are generated procedurally using a mathematical parametric equation and rendered as connected line segments. For collision handling and movement, each heart is approximated using a circular bounding radius, allowing the same physics system used for particles to be reused while keeping the visual heart shape. This approach keeps the simulation fast, stable, and easy to extend.
+
